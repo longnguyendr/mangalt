@@ -3,6 +3,7 @@ import express from 'express'
 import template from './../template'
 //comment out before building for production
 import devBundle from './devBundle'
+import cors from 'cors'
 
 const app = express()
 //comment out before building for production
@@ -14,7 +15,7 @@ app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')))
 app.get('/', (req, res) => {
   res.status(200).send(template())
 })
-
+app.use(cors())
 let port = process.env.PORT || 3000
 app.listen(port, function onStart(err) {
   if (err) {
@@ -22,3 +23,4 @@ app.listen(port, function onStart(err) {
   }
   console.info('Server started on port %s.', port)
 })
+

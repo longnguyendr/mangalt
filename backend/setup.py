@@ -1,9 +1,17 @@
 from setuptools import setup
 
+
+# List of dependencies installed via `pip install -e .`
 requires = [
     'pyramid',
     'waitress',
+    'pyramid_chameleon',
+    'sqlalchemy',
+    'pyramid_tm',
+    'zope.sqlalchemy',
 ]
+
+# List of dependencies installed via `pip install -e ".[dev]"`
 dev_requires = [
     'pyramid_debugtoolbar',
     'pytest',
@@ -19,5 +27,9 @@ setup(
         'paste.app_factory': [
             'main = mangalt:main'
         ],
+        'console_scripts': [
+            'initialize_mangalt_db = mangalt.initialize_db:main'
+        ],
+
     },
 )
