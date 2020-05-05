@@ -15,6 +15,12 @@ app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')))
 app.get('/', (req, res) => {
   res.status(200).send(template())
 })
+app.get("/register", function (req, res) {
+  res.status(200).send(template());
+});
+app.get("/login", function (req, res) {
+  res.status(200).send(template());
+});
 app.use(cors())
 let port = process.env.PORT || 3000
 app.listen(port, function onStart(err) {

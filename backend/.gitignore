@@ -1,3 +1,5 @@
 mangalt.egg-info
 /mangalt/__pycache__
 /mangalt/models/__pycache__
+__pycache__
+/libs/__pycache__

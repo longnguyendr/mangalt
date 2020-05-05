@@ -12,8 +12,8 @@ const MainRouter = (props) => {
             <NavigationBar />
             <Switch>
                 <AppliedRoute path="/" exact component={Home} />
-                <AppliedRoute path="/login" exact component={Login} />
-                <AppliedRoute path="/register" exact component={Register} />
+                <AppliedRoute path="/login" component={Login} />
+                <AppliedRoute path="/register" component={Register} />
             </Switch>
         </div>
     )

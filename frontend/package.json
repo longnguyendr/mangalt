@@ -17,7 +17,9 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^3.5.3",
     "nodemon": "^2.0.3",
+    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-middleware": "^3.7.2",
@@ -34,6 +36,7 @@
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.20",
+    "react-multi-carousel": "^2.5.5",
     "react-router-dom": "^5.1.2"
   }
 }

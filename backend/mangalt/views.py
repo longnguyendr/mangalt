@@ -15,6 +15,7 @@ class Mysite:
         greeting = 'hello {}'.format(self.request.json_body.get('name'))
         return dict(greeting=greeting)
     
-    @view_config(route_name='hello', request_method='OPTIONS')
-    def foo(self):
-        return dict()
+    # @view_config(route_name='hello', request_method='OPTIONS')
+    # def foo(self):
+    #     greeting = 'hello {}'.format(self.request.json_body.get('name'))
+    #     return dict(greeting=greeting)
